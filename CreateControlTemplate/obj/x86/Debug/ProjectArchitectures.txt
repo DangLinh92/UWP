@@ -1,0 +1,1 @@
+E:\UWP\UWP_Responsitory\UWP\CreateControlTemplate\CreateControlTemplate.csproj;x86

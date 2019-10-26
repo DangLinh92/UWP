@@ -26,5 +26,8 @@ namespace CreateControlTemplate
         {
             this.InitializeComponent();
         }
+
+        // Get style of control
+        // click control in code xaml -> documentOutline -> click control -> edit template -> edit a copy
     }
 }
