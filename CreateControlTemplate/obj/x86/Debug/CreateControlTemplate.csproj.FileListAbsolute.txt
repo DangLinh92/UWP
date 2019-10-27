@@ -122,6 +122,7 @@ E:\UWP\UWP_Responsitory\UWP\CreateControlTemplate\bin\x86\Debug\System.Xml.Reade
 E:\UWP\UWP_Responsitory\UWP\CreateControlTemplate\bin\x86\Debug\System.Xml.XDocument.dll
 E:\UWP\UWP_Responsitory\UWP\CreateControlTemplate\bin\x86\Debug\System.Xml.XmlDocument.dll
 E:\UWP\UWP_Responsitory\UWP\CreateControlTemplate\bin\x86\Debug\System.Xml.XmlSerializer.dll
+E:\UWP\UWP_Responsitory\UWP\CreateControlTemplate\obj\x86\Debug\CreateControlTemplate.csprojAssemblyReference.cache
 E:\UWP\UWP_Responsitory\UWP\CreateControlTemplate\obj\x86\Debug\App.g.i.cs
 E:\UWP\UWP_Responsitory\UWP\CreateControlTemplate\obj\x86\Debug\App.g.cs
 E:\UWP\UWP_Responsitory\UWP\CreateControlTemplate\obj\x86\Debug\MainPage.g.i.cs

@@ -9,6 +9,16 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <!--<local:GenericRatingControl Rating="4">
+            <local:GenericRatingControl.Template>
+                <ControlTemplate TargetType="local:GenericRatingControl">
+                    <TextBlock FontSize="40" Text="{Binding Rating,RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+                </ControlTemplate>
+            </local:GenericRatingControl.Template>
+        </local:GenericRatingControl>-->
 
+        <local:ClearableContentControl>
+            <TextBlock Text="HAHHAHAH"/>
+        </local:ClearableContentControl>
     </Grid>
 </Page>

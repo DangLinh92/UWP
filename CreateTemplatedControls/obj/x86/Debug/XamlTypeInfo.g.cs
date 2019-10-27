@@ -132,15 +132,31 @@ namespace CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
-            _typeNameTable[0] = "CreateTemplatedControls.MainPage";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable = new string[11];
+            _typeNameTable[0] = "CreateTemplatedControls.ClearableContentControl";
+            _typeNameTable[1] = "Windows.UI.Xaml.Controls.ContentControl";
+            _typeNameTable[2] = "CreateTemplatedControls.MainPage";
+            _typeNameTable[3] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[4] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[5] = "CreateTemplatedControls.CreateRatingConveter";
+            _typeNameTable[6] = "Object";
+            _typeNameTable[7] = "Int32";
+            _typeNameTable[8] = "CreateTemplatedControls.Rating";
+            _typeNameTable[9] = "CreateTemplatedControls.GenericRatingControl";
+            _typeNameTable[10] = "Windows.UI.Xaml.Controls.Control";
 
-            _typeTable = new global::System.Type[3];
-            _typeTable[0] = typeof(global::CreateTemplatedControls.MainPage);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable = new global::System.Type[11];
+            _typeTable[0] = typeof(global::CreateTemplatedControls.ClearableContentControl);
+            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
+            _typeTable[2] = typeof(global::CreateTemplatedControls.MainPage);
+            _typeTable[3] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[4] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[5] = typeof(global::CreateTemplatedControls.CreateRatingConveter);
+            _typeTable[6] = typeof(global::System.Object);
+            _typeTable[7] = typeof(global::System.Int32);
+            _typeTable[8] = typeof(global::CreateTemplatedControls.Rating);
+            _typeTable[9] = typeof(global::CreateTemplatedControls.GenericRatingControl);
+            _typeTable[10] = typeof(global::Windows.UI.Xaml.Controls.Control);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -175,7 +191,11 @@ namespace CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::CreateTemplatedControls.MainPage(); }
+        private object Activate_0_ClearableContentControl() { return new global::CreateTemplatedControls.ClearableContentControl(); }
+        private object Activate_2_MainPage() { return new global::CreateTemplatedControls.MainPage(); }
+        private object Activate_5_CreateRatingConveter() { return new global::CreateTemplatedControls.CreateRatingConveter(); }
+        private object Activate_8_Rating() { return new global::CreateTemplatedControls.Rating(); }
+        private object Activate_9_GenericRatingControl() { return new global::CreateTemplatedControls.GenericRatingControl(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -187,18 +207,65 @@ namespace CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  CreateTemplatedControls.MainPage
-                userType = new global::CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+            case 0:   //  CreateTemplatedControls.ClearableContentControl
+                userType = new global::CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentControl"));
+                userType.Activator = Activate_0_ClearableContentControl;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 1:   //  Windows.UI.Xaml.Controls.Page
+            case 1:   //  Windows.UI.Xaml.Controls.ContentControl
                 xamlType = new global::CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 2:   //  Windows.UI.Xaml.Controls.UserControl
+            case 2:   //  CreateTemplatedControls.MainPage
+                userType = new global::CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_2_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 3:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 4:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 5:   //  CreateTemplatedControls.CreateRatingConveter
+                userType = new global::CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_5_CreateRatingConveter;
+                userType.AddMemberName("CompareValue");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  Object
+                xamlType = new global::CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  Int32
+                xamlType = new global::CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 8:   //  CreateTemplatedControls.Rating
+                userType = new global::CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_8_Rating;
+                userType.AddMemberName("Value");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 9:   //  CreateTemplatedControls.GenericRatingControl
+                userType = new global::CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_9_GenericRatingControl;
+                userType.AddMemberName("Rating");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  Windows.UI.Xaml.Controls.Control
                 xamlType = new global::CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -206,11 +273,65 @@ namespace CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo
         }
 
 
+        private object get_0_CreateRatingConveter_CompareValue(object instance)
+        {
+            var that = (global::CreateTemplatedControls.CreateRatingConveter)instance;
+            return that.CompareValue;
+        }
+        private void set_0_CreateRatingConveter_CompareValue(object instance, object Value)
+        {
+            var that = (global::CreateTemplatedControls.CreateRatingConveter)instance;
+            that.CompareValue = (global::System.Int32)Value;
+        }
+        private object get_1_Rating_Value(object instance)
+        {
+            var that = (global::CreateTemplatedControls.Rating)instance;
+            return that.Value;
+        }
+        private void set_1_Rating_Value(object instance, object Value)
+        {
+            var that = (global::CreateTemplatedControls.Rating)instance;
+            that.Value = (global::System.Int32)Value;
+        }
+        private object get_2_GenericRatingControl_Rating(object instance)
+        {
+            var that = (global::CreateTemplatedControls.GenericRatingControl)instance;
+            return that.Rating;
+        }
+        private void set_2_GenericRatingControl_Rating(object instance, object Value)
+        {
+            var that = (global::CreateTemplatedControls.GenericRatingControl)instance;
+            that.Rating = (global::System.Int32)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "CreateTemplatedControls.CreateRatingConveter.CompareValue":
+                userType = (global::CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CreateTemplatedControls.CreateRatingConveter");
+                xamlMember = new global::CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo.XamlMember(this, "CompareValue", "Int32");
+                xamlMember.Getter = get_0_CreateRatingConveter_CompareValue;
+                xamlMember.Setter = set_0_CreateRatingConveter_CompareValue;
+                break;
+            case "CreateTemplatedControls.Rating.Value":
+                userType = (global::CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CreateTemplatedControls.Rating");
+                xamlMember = new global::CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo.XamlMember(this, "Value", "Int32");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_1_Rating_Value;
+                xamlMember.Setter = set_1_Rating_Value;
+                break;
+            case "CreateTemplatedControls.GenericRatingControl.Rating":
+                userType = (global::CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CreateTemplatedControls.GenericRatingControl");
+                xamlMember = new global::CreateTemplatedControls.CreateTemplatedControls_XamlTypeInfo.XamlMember(this, "Rating", "Int32");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_2_GenericRatingControl_Rating;
+                xamlMember.Setter = set_2_GenericRatingControl_Rating;
+                break;
+            }
             return xamlMember;
         }
     }
