@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="MultiLanguae_ResourceFile.MainPage"
+    x:Class="MultiLanguae_ResourceFile.BlankPage1"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:MultiLanguae_ResourceFile"
@@ -9,18 +9,10 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <StackPanel Orientation="Horizontal">
-            <Button Click="Button_Click" Content="Navigate" Margin="20"></Button>
-            <Button Click="Button_Click_1" Content="Show error"></Button>
-            <TextBlock x:Name="txtErr"></TextBlock>
-        </StackPanel>
-
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Click="Button_Click" Content="Back"></Button>
             <TextBlock x:Uid="txtName"></TextBlock>
-            <TextBlock x:Uid="txtAge"></TextBlock>
         </StackPanel>
-        <Frame x:Name="LoadFrame">
-            
-        </Frame>
+        
     </Grid>
 </Page>
